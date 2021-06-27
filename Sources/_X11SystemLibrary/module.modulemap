@@ -1,4 +1,4 @@
-module X11Lib [system] {
+module _X11SystemLibrary [system] {
     header "shim.h"
     link "X11"
     link "GLX"

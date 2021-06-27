@@ -17,6 +17,6 @@ let package = Package(
         .systemLibrary(name: "_X11SystemLibrary", path: "Sources/_X11SystemLibrary"),
         .target(name: "X11",
                 dependencies: ["_X11SystemLibrary",
-                               .product(name: "_X11LibraryExtensions", package: "_X11")]),
+                               .product(name: "_X11", package: "_X11")]),
     ]
 )

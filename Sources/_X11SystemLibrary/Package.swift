@@ -3,4 +3,4 @@
 
 import PackageDescription
 
-let package = Package(name: "X11Lib")
+let package = Package(name: "_X11SystemLibrary")
