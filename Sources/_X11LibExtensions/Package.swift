@@ -16,14 +16,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "X11Ext",
+    name: "X11Extensions",
     products: [
-        .library(name: "X11Ext", targets: ["X11Ext"])
+        .library(name: "X11Extensions", targets: ["X11Extensions"])
     ],
     targets: [
-        .target(name: "X11Ext",
-                path: "./Sources/X11Ext",
-                publicHeadersPath: "Include")
+        .target(name: "X11Extensions", publicHeadersPath: "Include")
     ],
     cLanguageStandard: .c99
 )

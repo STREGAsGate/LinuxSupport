@@ -1,2 +1,2 @@
-@_exported import X11Lib
-@_exported import X11Ext
+@_exported import _X11SystemLibrary
+@_exported import _X11LibraryExtensions

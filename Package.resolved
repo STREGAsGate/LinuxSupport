@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "_X11",
+        "repositoryURL": "https://github.com/STREGAsGate/_X11.git",
+        "state": {
+          "branch": "master",
+          "revision": "55d004fa302b38371e74e061a671efbeebbf99c2",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
