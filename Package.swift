@@ -6,16 +6,15 @@ import PackageDescription
 let package = Package(
     name: "X11",
     products: [
-        .library(name: "X11", type: .static, targets: ["X11"]),
+        .library(name: "LinuxSupport", type: .static, targets: ["LinuxSupport"]),
     ],
     dependencies: [
 
     ],
     targets: [
-        .systemLibrary(name: "_X11SystemLibrary", path: "Sources/_X11SystemLibrary"),
-        .target(name: "_X11", publicHeadersPath: "Include"),
-        .target(name: "X11",
-                dependencies: ["_X11SystemLibrary",
-                               "_X11"]),
+        .systemLibrary(name: "LinuxImports", path: "Sources/LinuxImports"),
+        .target(name: "LinuxExtensions", publicHeadersPath: "Include"),
+
+        .target(name: "LinuxSupport", dependencies: ["LinuxImports", "LinuxExtensions"]),
     ]
 )
