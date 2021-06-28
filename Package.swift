@@ -16,5 +16,6 @@ let package = Package(
         .target(name: "LinuxExtensions", publicHeadersPath: "Include"),
 
         .target(name: "LinuxSupport", dependencies: ["LinuxImports", "LinuxExtensions"]),
-    ]
+    ],
+    cLanguageStandard: .gnu11
 )
