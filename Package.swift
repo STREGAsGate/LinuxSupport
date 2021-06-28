@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "X11",
+    name: "LinuxSupport",
     products: [
         .library(name: "LinuxSupport", type: .static, targets: ["LinuxSupport"]),
     ],
