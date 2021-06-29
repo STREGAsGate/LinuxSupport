@@ -20,4 +20,9 @@ public func EVIOCGABS(_ abs: Int32) -> Int32 {
     return LinuxExtensions.EVIOCGABS(abs)
 }
 
+@_transparent
+public func EVIOCGKEY(_ len: Int32) -> Int32 {
+    return LinuxExtensions.EVIOCGKEY(len)
+}
+
 public let EVIOCGID: Int32 = LinuxExtensions.EVIOCGID()

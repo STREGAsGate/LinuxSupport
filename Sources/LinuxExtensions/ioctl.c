@@ -33,6 +33,10 @@ int EVIOCGABS(int abs) {
      return _IOR('E', 0x40 + (abs), struct input_absinfo);
 }
 
+int EVIOCGKEY(int len) {
+	return _IOC(_IOC_READ, 'E', 0x18, len);
+}
+
 int EVIOCGID() {
 	return _IOR('E', 0x02, struct input_id);
 }
