@@ -19,3 +19,5 @@ public func EVIOCGBIT(_ ev: Int32, _ len: Int32) -> Int32 {
 public func EVIOCGABS(_ abs: Int32) -> Int32 {
     return LinuxExtensions.EVIOCGABS(abs)
 }
+
+public let EVIOCGID: Int32 = LinuxExtensions.EVIOCGID()

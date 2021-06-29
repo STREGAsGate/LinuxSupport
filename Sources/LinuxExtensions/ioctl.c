@@ -11,6 +11,13 @@ struct input_absinfo {
 	__s32 resolution;
 };
 
+struct input_id {
+	__u16 bustype;
+	__u16 vendor;
+	__u16 product;
+	__u16 version;
+};
+
 int ioctl_ptr(int fd, int request, void* ptr) {
     return ioctl(fd, request, ptr);
 }
@@ -24,4 +31,8 @@ int EVIOCGBIT(int ev, int len) {
 
 int EVIOCGABS(int abs) {
      return _IOR('E', 0x40 + (abs), struct input_absinfo);
+}
+
+int EVIOCGID() {
+	return _IOR('E', 0x02, struct input_id);
 }
